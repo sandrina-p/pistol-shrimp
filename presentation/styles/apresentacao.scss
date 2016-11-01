@@ -1,0 +1,540 @@
+* {
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   position: absolute;
+   background-color: black;
+   font-family: sans-serif;
+   width: 100vw;
+   height: 100vh;
+   overflow: hidden;
+}
+
+
+a {
+    color: white;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+a:visited{
+    color: white;
+    font-family: sans-serif;
+}
+
+a:hover{
+    color: darkgrey;
+    font-family: sans-serif;
+}
+
+canvas {
+    position: absolute;
+    top: 40vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    margin-bottom: 10px;
+}
+////////// NUMEROS
+.numerosfundo{
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    border: 1px solid;
+    position: absolute;
+    top: 5vh;
+    left: 5vh;
+    z-index: 999;
+    text-align: center;
+    color: black;
+    color: white;
+}
+
+
+#n0{
+    margin-left: 35px;
+}
+
+#n1{
+    margin-left: 70px;
+}
+
+#n2{
+    margin-left: 105px;
+}
+
+#n3{
+    margin-left: 140px;
+}
+
+#n4{
+    margin-left: 175px;
+}
+
+
+////////// INTRO
+#intro{
+   @extend body;
+
+   #wrapper {
+       position: absolute;
+       left: 50vw;
+       bottom: calc(50vh - 155px);
+       transform: translate(-50%, -0%);
+       width: 200px;
+       overflow: hidden;
+       display: flex;
+       display: -webkit-flex;
+       align-items: flex-end;
+       -webkit-align-items: flex-end;
+   }
+
+   .typewriter {
+       font-family: sans-serif;
+       font-size: 11pt;
+       line-height: 17pt;
+       color: white;
+       white-space: pre-wrap;
+       margin-right: -6px;
+       text-align: left;
+       width: 200px;
+   }
+
+   #ghost {
+      position: absolute;
+      left: 50vw;
+      top: 0;
+      transform: translate(-50%, -0%);
+      width: 200px;
+      height: 50vh;
+      background-color: black;
+   }
+
+
+}
+
+////////// VIDEO
+#videoshrimp {
+   @extend body;
+   display: none;
+
+   iframe {
+      position: absolute;
+      width: 50vw;
+      height: 50vh;
+      left: 25vw;
+      top: 25vh;
+      // transform: translate(-50%, -50%);
+   }
+
+   #ghost-iframe{
+      width: 100vw;
+      height: 100vh;
+      position: absolute;
+      background-color: rgba(16, 218, 188, 0.17);
+      display: none;
+   }
+
+
+}
+
+.controls {
+display: none;
+}
+.sidedock{
+display:none !important;
+}
+
+////////// QUOTES
+#quotes{
+   @extend body;
+   display: none;
+
+   .contentor {
+      position: absolute;
+      top: 50vh;
+      left: calc(50vw - 300px);
+      transform: translate(0, -50%);
+      width: 600px;
+      height: 200px;
+      box-sizing:border-box;
+      border: 2px solid;
+      border-bottom: 12px solid;
+      background-color: black;
+      color: white;
+   }
+
+   .autor {
+      position: absolute;
+      width: 560px;
+      height: 200px;
+      top: 20px;
+      left: 20px;
+      display: none;
+
+      h1 {
+         font-family: sans-serif;
+         font-weight: bold;
+         line-height: 35pt;
+         font-size: 20pt;
+      }
+
+      // TEMPOS E VELOCIDADES DAS LINHAS
+      .linha1 {
+         width: 0px;
+         white-space:nowrap;
+         overflow:hidden;
+         animation: type 2s steps(40, end);
+         animation-fill-mode: forwards;
+      }
+      .linha2 {
+         @extend .linha1;
+         animation-delay: 2s;
+      }
+      .linha3 {
+         @extend .linha1;
+         animation-delay: 4s;
+      }
+        .linha4 {
+         @extend .linha1;
+         animation-delay: 6s;
+      }
+       .linha5 {
+         @extend .linha1;
+         animation-delay: 8s;
+      }
+       .linha6 {
+         @extend .linha1;
+         animation-delay: 10s;
+      }
+
+
+      @keyframes type{
+          from { width: 10px; }
+
+          to { width: 560px; }
+      }
+   }
+
+   #autor1234etc {
+      //So para detectar mais facilmente no javascript
+   }
+
+   .keyss{
+       width: 25px;
+       height: 25px;
+       line-height: 25px;
+       position: absolute;
+       bottom: 5vh;
+       left: 5vh;
+       z-index: 999;
+       text-align: center;
+       color: white;
+       border: 1px solid;
+   }
+
+
+
+   .keyss:nth-of-type(2) {
+       margin-left: 35px;
+   }
+
+   .keyss:nth-of-type(3) {
+       margin-left: 70px;
+   }
+
+   .keyss:nth-of-type(4) {
+       margin-left: 105px;
+   }
+
+   .keyss:nth-of-type(5) {
+       margin-left: 140px;
+   }
+
+   .keyss:nth-of-type(6) {
+       margin-left: 175px;
+   }
+
+   .keyss:nth-of-type(7) {
+       margin-left: 210px;
+   }
+
+}
+
+////////// DOWNLOAD
+
+#download{
+   position: absolute;
+   top: 0;
+   @extend body;
+   display: none;
+
+
+   .main{
+       width: 300px;
+       left: 50%;
+       top: 30%;
+       position: absolute;
+       margin-left: -150px;
+       font-family: sans-serif;
+       color: white;
+       font-weight: bold;
+       line-height: 17pt;
+
+       input[type=password] {
+           width: 100%;
+           height: 40px;
+           padding: 5px;
+           margin-top: 5px;
+           color: white;
+           border: 2px solid white;
+           background-color: transparent;
+           font-size: 16px;
+       }
+   }
+
+   .yes2{
+       width: 100vw;
+       height: 100vh;
+       top: 0;
+       left: 0;
+       display: none;
+       -webkit-animation: rainbowbg 1s infinite;
+       animation: rainbowbg 1s infinite;
+
+      .yes {
+          width: calc(296px - 0px);
+          height: 80px;
+          position: absolute;
+          left: 50vw;
+          top: 50vh;
+          margin-left: -150px;
+          background-color: transparent;
+          border: 2px solid white;
+          border-bottom: 8px solid white;
+          padding-top: 10px;
+          padding-left: 15px;
+          line-height: 10pt;
+          font-weight: bold;
+          position: absolute;
+          border-bottom-width: thick;
+          cursor:help;
+          display: none;
+
+          .yes a{
+              color: white;
+          }
+
+          .yes a:hover{
+              color: white !important;
+          }
+      }
+   }
+
+   .no2{
+       width: 100vw;
+       height: 100vh;
+       background: black;
+       display: none;
+
+      .no {
+          width: calc(296px - 0px);
+          height: 80px;
+          position: absolute;
+          left: 50vw;
+          top: 50vh;
+          margin-left: -150px;
+          background-color: transparent;
+          border: 2px solid;
+          border-bottom: 8px solid;
+          padding-top: 10px;
+          padding-left: 15px;
+          line-height: 10pt;
+          font-weight: bold;
+          position: absolute;
+          border-bottom-width: thick;
+          cursor:help;
+          display: none;
+      }
+   }
+
+   //WTF IS THIS?
+   [tooltip]:before {
+       /* needed - do not touch */
+       content: attr(tooltip);
+       position: absolute;
+       opacity: 0;
+
+       /* customizable */
+
+       padding: 10px;
+       color: #fff;
+       border-radius: 0px;
+       font-size: 12px;
+       border-color:#ffffff;
+       font-family: sans-serif;
+   }
+
+   [tooltip]:hover:before {
+       /* needed - do not touch */
+       opacity: 1;
+
+       /* customizable */
+       background: black;
+       margin-top: 19.5%;
+       margin-left: 60%;
+       font-weight: 1000;
+
+   }
+}
+
+////////// CONVITE
+#convite {
+   @extend body;
+   display: none;
+
+   .contentor{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 700px;
+      height: 200px;
+      box-sizing:border-box;
+      border: 2px solid;
+      border-bottom: 12px solid;
+      background-color: black;
+
+      &:hover{
+         cursor: help;
+         animation:rainbow 1s infinite;
+      }
+   }
+
+   #titulo{
+      position: absolute;
+      font-weight: bold;
+      padding-right: 5vw;
+      font-size: 25pt;
+      left: 4vw;
+      top: 50%;
+      transform: translate(0%, -50%);
+   }
+
+   .titulo {
+      @extend #titulo;
+      display: block;
+      padding-right: 1vw;
+
+   }
+
+   #speakers{
+      color:white;
+      font-size: 8pt;
+      letter-spacing: 1.5pt;
+      position: absolute;
+      left: 1vw;
+      top:1vw;
+      display: none;
+   }
+}
+
+#joaoferreira {
+   width: 100vw;
+   height: 100vh;
+   top: 0;
+   left: 0;
+   position: absolute;
+   background-color: black;
+   z-index: 9;
+   display: none;
+
+   .contentor {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: calc(100vw - 10px);
+      height: 200px;
+      box-sizing:border-box;
+      border: 2px solid;
+      border-bottom: 12px solid;
+      background-color: black;
+      color: white;
+
+      #mensagem {
+         position: absolute;
+         font-weight: bold;
+         padding-right: 5vw;
+         font-size: 15pt;
+         left: 4vw;
+         top: 50%;
+         transform: translate(0%, -50%);
+         display: none;
+      }
+      #recado {
+         position: absolute;
+         font-weight: bold;
+         padding-right: 5vw;
+         font-size: 15pt;
+         line-height: 22pt;
+         left: 4vw;
+         top: 50%;
+         transform: translate(0%, -50%);
+         display: none;
+      }
+   }
+}
+
+//RAINBOW LINKS
+@keyframes rainbow { 0% {color: #ff0000;} 10% {color: #ff8000;} 20% {color: #ffff00;} 30% {color: #80ff00;} 40% {color: #00ff00;} 50% {color: #00ff80;} 60% {color: #00ffff;} 70% {color: #0080ff;} 80% {color: #0000ff;} 90% {color: #8000ff;} 100% {color: #ff0080;} }
+@keyframes rainbowbg { 0% { background-color: #ff0000; } 10% { background-color: #ff8000; } 20% { background-color: #ffff00; } 30% { background-color: #80ff00; } 40% { background-color: #00ff00; } 50% { background-color: #00ff80; } 60% { background-color: #00ffff; } 70% { background-color: #0080ff; } 80% { background-color: #0000ff; } 90% { background-color: #8000ff; } 100% { background-color: #ff0080; } }
+
+
+
+//TARGET OTHERS
+@media screen and (max-device-width: 600px){
+
+   #joaoferreira {
+       display: block;
+   }
+
+   #joaoferreira .contentor #recado {
+      display: none;
+   }
+
+   #joaoferreira .contentor #mensagem {
+      display: block;
+   }
+
+   .numerosfundo{
+      display: none;
+   }
+
+
+}
+
+
+/*TARGET LG NEXUS 5*/
+@media screen and (device-width: 360px) and (device-height: 592px) {
+// and (-webkit-device-pixel-ratio: 3) {
+
+   #joaoferreira {
+       display: block;
+   }
+
+   #joaoferreira .contentor #recado {
+      display: block;
+   }
+
+   #joaoferreira .contentor #mensagem {
+      display: none;
+   }
+
+   .numerosfundo{
+      display: none;
+   }
+
+}

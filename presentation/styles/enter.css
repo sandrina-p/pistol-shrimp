@@ -1,0 +1,157 @@
+body {
+    background-color: black;
+    font-family: sans-serif;
+}
+
+canvas {
+    position: absolute;
+    top: 40vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+}
+
+
+#wrapper {
+    position: absolute;
+    left: 50vw;
+    bottom: calc(50vh - 155px);
+    transform: translate(-50%, -0%);
+    width: 200px;
+    overflow: hidden;
+    display: flex;
+    display: -webkit-flex;
+    align-items: flex-end;
+    -webkit-align-items: flex-end;
+}
+
+.typewriter {
+    font-family: sans-serif;
+    font-size: 11pt;
+    line-height: 17pt;
+    color: white;
+    white-space: pre-wrap;
+    margin-right: -6px;
+    text-align: left;
+    width: 200px;
+}
+
+#ghost {
+   position: absolute;
+   left: 50vw;
+   top: 0;
+   transform: translate(-50%, -0%);
+   width: 200px;
+   height: 50vh;
+   background-color: black;
+}
+
+#joaoferreira {
+   width: 100vw;
+   height: 100vh;
+   top: 0;
+   left: 0;
+   position: absolute;
+   background-color: black;
+   z-index: 9;
+   display: none;
+}
+
+.contentor {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   width: calc(100vw - 10px);
+   height: 200px;
+   box-sizing:border-box;
+   border: 2px solid;
+   border-bottom: 12px solid;
+   background-color: black;
+   color: white;
+}
+
+#mensagem {
+   position: absolute;
+   font-weight: bold;
+   padding-right: 5vw;
+   font-size: 15pt;
+   left: 4vw;
+   top: 50%;
+   transform: translate(0%, -50%);
+   display: none;
+}
+
+#recado {
+   position: absolute;
+   font-weight: bold;
+   padding-right: 5vw;
+   font-size: 15pt;
+   line-height: 22pt;
+   left: 4vw;
+   top: 50%;
+   transform: translate(0%, -50%);
+   display: none;
+}
+
+/*//TARGET OTHERS*/
+@media screen and (max-device-width: 600px){
+
+   #joaoferreira {
+       display: block;
+   }
+
+   #joaoferreira .contentor #recado {
+      display: none;
+   }
+
+   #joaoferreira .contentor #mensagem {
+      display: block;
+   }
+
+   .numerosfundo{
+      display: none;
+   }
+
+   canvas {
+      display: none;
+   }
+
+   .numeros {
+      display: none;
+   }
+
+
+}
+
+
+/*TARGET LG NEXUS 5*/
+@media screen and (device-width: 360px) and (device-height: 592px)
+and (-webkit-device-pixel-ratio: 3) {
+
+   #joaoferreira {
+       display: block;
+   }
+
+   #joaoferreira .contentor #recado {
+      display: block;
+   }
+
+   #joaoferreira .contentor #mensagem {
+      display: none;
+   }
+
+   .numerosfundo{
+      display: none;
+   }
+
+
+   canvas {
+      display: none;
+   }
+
+   .numeros {
+      display: none;
+   }
+
+}

@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <title>Pistol Shrimp</title>
+
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <meta name='keywords' content='Pistol Shrimp, Record Label, Music, Interactive'>
+   <meta name='description' content='Pistol Shrimp is an internet based record label that distributes free music through interactive experiences.'>
+   <meta name='subject' content='Record Label'>
+   <meta name='copyright' content='Pistol Shrimp'>
+   <meta name='language' content='EN'>
+
+   <link rel="icon" type="image/png" href="data/icon16.jpg" sizes="16x16">
+   <link rel="icon" type="image/png" href="data/icon32.jpg" sizes="32x32">
+   <link rel="icon" type="image/png" href="data/icon180.jpg" sizes="180x180">
+
+
+   <link rel="stylesheet" href="styles/intro.css">
+   <link rel="stylesheet" type="text/css" href="styles/graphic.css" />
+
+
+   <!-- JQUERY LIBRARIE -->
+   <script src="js/libraries/jquery.js"></script>
+
+   <!-- LOADING PAGE LIBRARIE -->
+
+   <script  type="text/javascript" src="js/libraries/p5.min.js"></script>
+   <script  type="text/javascript" src="js/libraries/p5.dom.js"></script>
+   <script  type="text/javascript" src="js/libraries/p5.sound.min.js"></script>
+   <script  type="text/javascript" src="js/logo_sketch.js"></script>
+
+   <!-- WTF is this? <script type="text/javascript" src="js/libraries/object.create-shim.js"></script> -->
+
+
+</head>
+
+<body>
+<!-- /////////// LOADING /////////////-->
+
+   <div id="loading-bg"></div>
+
+   <div id="loading-content">
+
+      <div id="skip">
+         <br>
+         <p>Pistol Shrimp is a record label for cybernauts.</p>
+         <p>All our music is distributed for free, but you have to earn it.</p>
+      </div>
+      <br>
+
+      <div id="loading-icon">
+         <div class="la-line-scale-pulse-out la-dark la-sm">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+         </div>
+      </div>
+
+      <h6>[ can you find it? ]</h6>
+
+      <p class="friendly">Please use Google Chrome Browser and turn on  <br> your microphone and speakers for full experience</p>
+
+   </div>
+
+   <div id="wrapper">
+   <main id="main-intro">
+      <ul id="intro">
+
+<!-- /////////// ABOUT /////////////-->
+         <li>
+            <div class="m-title"><h4>about</h4></div>
+
+            <div class="m-content">
+               <section id="about">
+
+                  <div id="about-content">
+
+                     <!--ABOUT??-->
+                     <div class="ad-window draggable resize-drag w-interrogacao">
+                        <div class="ad-saveclick"></div>
+                        <div class="handle"></div>
+                        <br>
+                        <h1><a href="https://vimeo.com/130764982" target="_blank">?</a></h1>
+                        <br>
+                        <p>Pistol Shrimp is all about portraying the role of music in our generational context, once it holds a fundamental place in the transmission of values and sociocultural behaviours among the youngsters such as ourselves.
+
+                           <br>While facing an environment where communication between different generations is often blurred by a lack of understanding towards the digital culture and its ideals, we found it appropriate not to make a documental or journalistic work, but rather to focus on the audio-visual production practice inside open source virtual communities.
+                           <br>Therefore, our ambitions lie in a proactive role as a record label, responsible for the curatorship, production and distribution of contents in the web and the creation of events where the focus is both the interactive counterpart and the active role of the spectator in the creation of real time contents in collaboration with the members and the artists of our label. </p>
+                           <br><br>
+
+                        <svg class="resizer">
+                           <polygon points="10,10 0,10 10,0 "/>
+                        </svg>
+                     </div>
+
+                     <!--CONTACT-->
+                     <div class="ad-window draggable resize-drag w-contact">
+                        <div class="ad-saveclick"></div>
+                        <div class="handle"></div>
+                        <p><span>.</span></p>
+                        <h1>
+                           for bookings
+                           <br>[ and pretty much everything else ]
+                           <br>
+                           <a href="mailto:general@pistolshrimp.net?Subject=You%20are%20awesome!" target="_top">
+                              general@pistolshrimp.net
+                           </a>
+                        </h1>
+                        <br>
+                        <p>follow us on <a href="https://www.facebook.com/pshrimp" target="_blank">Facebook</a> and see what we are doing!
+                        </p>
+
+                        <!-- <h1>contact us!</h1> -->
+
+                        <svg class="resizer">
+                           <polygon points="10,10 0,10 10,0 "/>
+                        </svg>
+                     </div>
+
+                     <!--VIDEO a mariana nao quis o video mas se o queres é so por display:block-->
+                     <div class="ad-window draggable resize-drag w-video">
+                        <div class="ad-saveclick"></div>
+                        <div class="handle"></div>
+
+                        <iframe src="https://player.vimeo.com/video/130764982" width="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+                        <svg class="resizer">
+                           <polygon points="10,10 0,10 10,0 "/>
+                        </svg>
+                     </div>
+
+                     <!--SOURCES-->
+                     <div class="ad-window draggable resize-drag w-source">
+                        <div class="ad-saveclick"></div>
+                        <div class="handle"></div>
+                        <br>
+                        <h1>made with the help of</h1>
+                        <br>
+                        <p>
+                           <a href="http://www.arduino.cc/" target="_blank">Arduino</a>
+                           <br><a href="http://www.atom.io/" target="_blank">Atom</a>
+                           <br><a href="http://www.audacityteam.org/" target="_blank">Audacity</a>
+                           <br><a href="http://www.blender.org/" target="_blank">Blender</a>
+                           <br><a href="http://www.brackets.io/" target="_blank">Brackets</a>
+                           <br><a href="http://www.p5js.org/" target="_blank">P5js</a>
+                           <br><a href="http://www.processing.org/" target="_blank">Processing</a>
+                           <br><a href="http://www.puredata.info/" target="_blank">Pure Data</a>
+                           <br><a href="http://www.stackoverflow.com/" target="_blank">Stack Overflow</a>
+                           <br><a href="http://supercollider.github.io/" target="_blank">Super Collider</a>
+                        </p>
+
+                        <svg class="resizer">
+                           <polygon points="10,10 0,10 10,0 "/>
+                        </svg>
+                     </div>
+
+                     <!--BOOKMARKS-->
+                     <!-- <div class="ad-window draggable resize-drag w-book">
+                        <div class="ad-saveclick"></div>
+                        <div class="handle"></div>
+
+                        <h1>bookmarks</h1>
+                        <p>
+                           <a href="http://www.arduino.cc/" target="_blank">Arduino</a>
+                           <br><a href="http://www.atom.io/" target="_blank">Atom</a>
+                           <br><a href="http://www.audacityteam.org/" target="_blank">Audacity</a>
+                           <br><a href="http://www.blender.org/" target="_blank">Blender</a>
+                           <br><a href="http://www.brackets.io/" target="_blank">Brackets</a>
+                           <br><a href="http://www.p5js.org/" target="_blank">P5js</a>
+                           <br><a href="http://www.processing.org/" target="_blank">Processing</a>
+                           <br><a href="http://www.puredata.info/" target="_blank">Pure Data</a>
+                           <br><a href="http://www.stackoverflow.com/" target="_blank">Stack Overflow</a>
+                           <br><a href="http://supercollider.github.io/" target="_blank">Super Collider</a>
+                        </p>
+
+                        <svg class="resizer">
+                           <polygon points="10,10 0,10 10,0 "/>
+                        </svg>
+                     </div> -->
+                  </div>
+
+
+               </section>
+            </div>
+         </li>
+
+<!-- /////////// ARTISTS /////////////-->
+         <li>
+            <div class="m-title"><h4>artists</h4></div>
+
+            <div class="m-content">
+               <section id="art">
+
+            		<div id="artists">
+                     <div class="artists-item"><h2>bleiddwn</h2></div>
+                     <div class="artists-item"><h2>da sheeple</h2></div>
+                     <div class="artists-item"><h2>nespairght</h2></div>
+                     <div class="artists-item"><h2>zurvan</h2></div>
+            		</div>
+
+            		<div id="artists-deep">
+
+            			<!-- BLEIDDWN -->
+                     <div class="artists-deep-list">
+
+                        <!--BG-->
+            				<div class="ad-bg-x"></div>
+
+                        <!--CLOSE-->
+                        <div class="ad-window w-close">
+                           [ close ]
+                        </div>
+
+            				<!--BIO-->
+            				<div class="ad-window draggable resize-drag w-bio">
+            					<div class="ad-saveclick"></div>
+            					<div class="handle"></div>
+                           <h1> bleiddwn</h1>
+                           <p class="text">bleiddwn is a failed attempt at recognising value in normal stuff. usually there is some music happening, but most of the time it’s just awkward silences and beat repeats. nothing really exists for a reason, anyways…
+                           </p>
+            					<svg class="resizer">
+            						<polygon points="10,10 0,10 10,0 "/>
+            					</svg>
+            				</div>
+
+                        <!--LINKS-->
+                        <div class="ad-window draggable resize-drag w-link">
+                           <div class="ad-saveclick"></div>
+                           <div class="handle"></div>
+                           <div class="ad-contentt">
+                              <a href="https://facebook.com/bleiddwnnn" target="_blank"><img src="data/icons/facebook.png" alt=""/></a>
+                              <a href="https://soundcloud.com/bleiddwnnn" target="_blank"><img src="data/icons/soundcloud.png" alt=""/></a>
+                           </div>
+                           <svg class="resizer">
+                              <polygon points="10,10 0,10 10,0 "/>
+                           </svg>
+                        </div>
+
+                        <!--IMGS-->
+                        <div class="ad-window draggable w-img">
+                           <div class="ad-saveclick"></div>
+                           <div class="handle"></div>
+                           <img src="data/img/artist_bleiddwn.jpg" alt="nespairght"/>
+                           <!-- <svg class="resizer">
+                              <polygon points="10,10 0,10 10,0 "/>
+                           </svg> -->
+                        </div>
+
+                     </div>
+
+                     <!-- DA SHEEPLE-->
+                     <div class="artists-deep-list">
+                        <div class="ad-bg-x" id="ad-dafuck">
+
+                           <div id="dafuck">
+                              ************************************************************************************************************************************************************************
+                              ************************************************************************************************************************************************************************
+                              ************************************************************************************************************************************************************************
+                              ************************************************************************************************************************************************************************
+                              ************************************************************************************************************************************************************************
+                              ************************************************************************************************************************************************************************
+                              ************************************************************************************************************************************************************************
+                              ************************************************************************************************************************************************************************
+                              ************************************************************************************************************************************************************************
+                              ************************************************************************************************************************************************************************
+                              ************************************************************************************************************************************************************************
+                              ************************************************************************************************************************************************************************
+                              ************************************************************************************************************************************************************************
+                              ************************************************************************************************************************************************************************
+                              ************************************************************************************************************************************************************************
+                              ************************************************************************************************************************************************************************
+                              ************************************************************************************************************************************************************************
+                              ************************************************************************************************************************************************************************
+                              ************************************************************************************************************************************************************************
+                              ************************************************************************************************************************************************************************
+                              ************************************************************************************************************************************************************************
+                              ************************************************************************************************************************************************************************
+                              ************************************************************************************************************************************************************************
+                              *************************************/$$*****************************/$$******************/$$$$$$**********************/$$**********************************************
+                              ************************************|*$$****************************|*$$*****************/$$__**$$********************|*$$**********************************************
+                              ***********************/$$**/$$**/$$|*$$$$$$$***/$$$$$$*********/$$$$$$$**/$$$$$$*******|*$$**\__/*/$$***/$$**/$$$$$$$|*$$***/$$****************************************
+                              **********************|*$$*|*$$*|*$$|*$$__**$$*/$$__**$$*******/$$__**$$*|____**$$******|*$$$$****|*$$**|*$$*/$$_____/|*$$**/$$/****************************************
+                              **********************|*$$*|*$$*|*$$|*$$**\*$$|*$$**\*$$******|*$$**|*$$**/$$$$$$$******|*$$_/****|*$$**|*$$|*$$******|*$$$$$$/*****************************************
+                              **********************|*$$*|*$$*|*$$|*$$**|*$$|*$$**|*$$******|*$$**|*$$*/$$__**$$******|*$$******|*$$**|*$$|*$$******|*$$_**$$*****************************************
+                              **********************|**$$$$$/$$$$/|*$$**|*$$|**$$$$$$/******|**$$$$$$$|**$$$$$$$******|*$$******|**$$$$$$/|**$$$$$$$|*$$*\**$$****************************************
+                              ***********************\_____/\___/*|__/**|__/*\______/********\_______/*\_______/******|__/*******\______/**\_______/|__/**\__/****************************************
+                              ************************************************************************************************************************************************************************
+                              ************************************************************************************************************************************************************************
+                              ************************************************************************************************************************************************************************
+                              ***********************/$$***********************/$$***************************/$$*************************************/$$************/$$$$*****************************
+                              **********************|__/**********************|*$$**************************|*$$************************************|*$$***********/$$**$$****************************
+                              ***********************/$$**/$$$$$$$********/$$$$$$$**/$$$$$$*********/$$$$$$$|*$$$$$$$***/$$$$$$***/$$$$$$***/$$$$$$*|*$$**/$$$$$$*|__/\*$$****************************
+                              **********************|*$$*/$$_____/*******/$$__**$$*|____**$$*******/$$_____/|*$$__**$$*/$$__**$$*/$$__**$$*/$$__**$$|*$$*/$$__**$$****/$$/****************************
+                              **********************|*$$|**$$$$$$*******|*$$**|*$$**/$$$$$$$******|**$$$$$$*|*$$**\*$$|*$$$$$$$$|*$$$$$$$$|*$$**\*$$|*$$|*$$$$$$$$***/$$/*****************************
+                              **********************|*$$*\____**$$******|*$$**|*$$*/$$__**$$*******\____**$$|*$$**|*$$|*$$_____/|*$$_____/|*$$**|*$$|*$$|*$$_____/**|__/******************************
+                              **********************|*$$*/$$$$$$$/******|**$$$$$$$|**$$$$$$$*******/$$$$$$$/|*$$**|*$$|**$$$$$$$|**$$$$$$$|*$$$$$$$/|*$$|**$$$$$$$***/$$******************************
+                              **********************|__/|_______/********\_______/*\_______/******|_______/*|__/**|__/*\_______/*\_______/|*$$____/*|__/*\_______/**|__/******************************
+                              ************************************************************************************************************|*$$********************************************************
+                              ************************************************************************************************************|*$$********************************************************
+                              ************************************************************************************************************|__/********************************************************
+                              ************************************************************************************************************************************************************************
+                              ************************************************************************************************************************************************************************
+                              ************************************************************************************************************************************************************************
+                              ************************************************************************************************************************************************************************
+                              ************************************************************************************************************************************************************************
+                              ************************************************************************************************************************************************************************
+                              ************************************************************************************************************************************************************************
+                              ************************************************************************************************************************************************************************
+                              ************************************************************************************************************************************************************************
+                              ************************************************************************************************************************************************************************
+                              ************************************************************************************************************************************************************************
+                              ************************************************************************************************************************************************************************
+                              ************************************************************************************************************************************************************************
+                              ************************************************************************************************************************************************************************
+                              ************************************************************************************************************************************************************************
+                              ************************************************************************************************************************************************************************
+                              ************************************************************************************************************************************************************************
+                              ************************************************************************************************************************************************************************
+                              ************************************************************************************************************************************************************************
+                              ************************************************************************************************************************************************************************
+                              ************************************************************************************************************************************************************************
+                           </div>
+                           <div id="daghosts">
+                              it seems it's not that easy to get information about this artist
+                           </div>
+                        </div>
+                     </div>
+
+                     <!-- NESPAIRGHT -->
+                     <div class="artists-deep-list">
+
+                        <!--BG-->
+            				<div class="ad-bg-x"></div>
+
+                        <!--CLOSE-->
+                        <div class="ad-window w-close">
+                           [ close ]
+                        </div>
+
+            				<!--BIO-->
+            				<div class="ad-window draggable resize-drag w-bio">
+            					<div class="ad-saveclick"></div>
+            					<div class="handle"></div>
+                           <h1> nespairght</h1>
+                           <p class="text">
+                                 Nespairght is a music project that explores different ways and techniques of creating and modifying audio digitally.
+                                 The name of this alter ego is the password its maker invented when the web asked him to create one for the first time.
+                           </p>
+            					<svg class="resizer">
+            						<polygon points="10,10 0,10 10,0 "/>
+            					</svg>
+            				</div>
+
+                        <!--LINKS-->
+                        <div class="ad-window draggable resize-drag w-link">
+                           <div class="ad-saveclick"></div>
+                           <div class="handle"></div>
+                           <div class="ad-contentt">
+                              <a href="https://facebook.com/nespairght" target="_blank"><img src="data/icons/facebook.png" alt="facebook nespairght"/></a>
+                              <a href="https://soundcloud.com/nespairght" target="_blank"><img src="data/icons/soundcloud.png" alt=" soundcloud nespairght"/></a>
+                              <a href="https://nespairght.bandcamp.com/releases" target="_blank"><img src="data/icons/bandcamp.png" alt=" bandcamp nespairght"/></a>
+                           </div>
+                           <svg class="resizer">
+                              <polygon points="10,10 0,10 10,0 "/>
+                           </svg>
+                        </div>
+
+                        <!--IMGS-->
+                        <div class="ad-window draggable w-img">
+                           <div class="ad-saveclick"></div>
+                           <div class="handle"></div>
+                           <img src="data/img/artist_nespairght.png" alt="nespairght"/>
+                           <!-- <svg class="resizer">
+                              <polygon points="10,10 0,10 10,0 "/>
+                           </svg> -->
+                        </div>
+
+                     </div>
+
+                     <!-- ZURVAN -->
+                     <div class="artists-deep-list">
+
+                        <!--BG-->
+                        <div class="ad-bg-x"></div>
+
+                        <!--CLOSE-->
+                        <div class="ad-window w-close">
+                           [ close ]
+                        </div>
+
+                        <!--BIO-->
+                        <div class="ad-window draggable resize-drag w-bio">
+                           <div class="ad-saveclick"></div>
+                           <div class="handle"></div>
+                           <h1>zurvan</h1>
+                           <p class="text">Drone music project by Filipe Dumas based in Lisbon.
+                           </p>
+                           <svg class="resizer">
+                              <polygon points="10,10 0,10 10,0 "/>
+                           </svg>
+                        </div>
+
+                        <!--LINKS-->
+                        <div class="ad-window draggable resize-drag w-link">
+                           <div class="ad-saveclick"></div>
+                           <div class="handle"></div>
+                           <div class="ad-contentt">
+                              <a href="https://facebook.com/zurvan" target="_blank"><img src="data/icons/facebook.png" alt=""/></a>
+                              <a href="https://soundcloud.com/zurvan" target="_blank"><img src="data/icons/soundcloud.png" alt=""/></a>
+                              <a href="https://bandcamp.com/" target="_blank"><img src="data/icons/bandcamp.png" alt=""/></a>
+                           </div>
+                           <svg class="resizer">
+                              <polygon points="10,10 0,10 10,0 "/>
+                           </svg>
+                        </div>
+
+                        <!--IMGS-->
+                        <div class="ad-window draggable w-img">
+                           <div class="ad-saveclick"></div>
+                           <div class="handle"></div>
+                           <img src="data/img/artist_zurvan.jpg" alt="nespairght"/>
+                           <!-- <svg class="resizer">
+                              <polygon points="10,10 0,10 10,0 "/>
+                           </svg> -->
+                        </div>
+
+                     </div>
+                  </div>
+
+            	</section>
+
+
+            </div>
+         </li>
+
+<!-- /////////// RELEASES /////////////-->
+         <li>
+            <div class="m-title">
+               <h4>releases</h4>
+               <h6> </h6>
+            </div>
+
+            <div class="m-content">
+               <section id="releases">
+                  <div id="releases-list">
+            			<div class="release-item">
+                        <a href="releases/koans.html" target="_blank" class="linkrelease">
+                           <img alt="release koans" src="data/img/release_koans.gif" />
+
+                           <h2>#1<span>__</span>Kōans</h2>
+
+                           <div class="info">
+                              <br>
+                              <p>Zurvan</p>
+                              <p>Jun 17th 2015</p>
+                           </div>
+                        </a>
+                     </div>
+
+                     <div class="release-item">
+                        <a href="releases/blue.html" target="_blank" class="linkrelease">
+                           <img alt="release koans" src="data/img/release_blue.gif" />
+                           <h2>#2<span>__</span>Blue</h2>
+                           <div class="info">
+                              <br>
+                              <p>Bleiddwn</p>
+                              <p>Jun 17th 2015</p>
+                           </div>
+                        </a>
+                     </div>
+
+
+
+                  </div>
+         		</section>
+            </div>
+         </li>
+
+<!-- /////////// EVENTO /////////////-->
+         <li>
+            <div class="m-title" id="caixa-event"><h4>events</h4></div>
+
+            <div class="m-content">
+               <section id="event">
+
+                  <div id="events-list">
+                     <p class="noevent">sorry, there are no upcoming events <br>
+                     but you can check the last one</p>
+
+            			<div class="event-item">
+                        <h2>#1<span>__</span>Pistol<span>_</span>Shrimp<span>_</span>@<span>_</span>RDA</h2>
+
+                        <div class="event-deep">
+                           <div class="info">
+                              <p>Jun 19th 2015</p>
+                              <a href="https://www.facebook.com/events/959990347399853/" target="_blank">
+                                 <p>[ see the event on facebook ]</p>
+                              </a>
+                           </div>
+
+                           <iframe src="https://player.vimeo.com/video/131081358" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+                           <img alt="evento RDA 19" src="data/img/evento_rda19_1.jpg" />
+                           <img alt="evento RDA 19" src="data/img/evento_rda19_2.jpg" />
+                           <img alt="evento RDA 19" src="data/img/evento_rda19_3.jpg" />
+
+                           <iframe src="https://player.vimeo.com/video/132167617" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+                        </div>
+                     </div>
+                  </div>
+
+                  <div id="event-game">
+                     <div id="container">
+                        <p>sorry, there are no upcoming events</p>
+
+                        <!-- PING-PONG -->
+                        <div id="jogo">
+                           <canvas id="gamee" width="400" height="200"> </canvas>
+                        </div>
+
+                        <div id="controls">
+                           <br>
+                           <p>[ player 1 ] W ; S </p>
+                           <p>[ player 2 ] P ; L </p>
+                        </div>
+                     </div>
+
+                     <div id="game-bg"></div>
+                  </div>
+
+               </section>
+            </div>
+         </li>
+      </ul>
+   </main>
+
+<!-- /////////// FOOTER /////////////-->
+   <footer>
+      <h6>
+         pistol shrimp [ 2015 ]
+      </h6>
+      <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">
+         <img alt="Licença Creative Commons" src="data/icons/cc.png" />
+      </a>
+   </footer>
+</div>
+<!-- /////////// SCRIPTS /////////////-->
+
+    <!-- DRAG_RESIZE LIBRARIE -->
+   <script type="text/javascript" src="js/libraries/interact.min.js"></script>
+   <!-- DRAG_ZONE LIBRARIE  -->
+   <script src="js/libraries/draggabilly.pkgd.js"></script>
+
+    <!-- SCRIPT main intro-->
+    <script type="text/javascript" src="js/intro.js"></script>
+    <script type="text/javascript" src="js/intro-m.js"></script>
+
+    <!-- SCRIPT about-->
+    <!--<script src="js/about.js"></script>-->
+    <!-- SCRIPT artists-->
+    <script type="text/javascript" src="js/draggie.js"></script>
+    <!-- SCRIPT invitation-->
+    <script  type="text/javascript" src="js/rainbow.js"></script>
+
+
+    <!-- SCRIPT pingpong-->
+    <script src="js/libraries/ping-pong.js"></script>
+
+
+</body>
+</html>

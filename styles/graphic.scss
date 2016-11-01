@@ -1,0 +1,149 @@
+@import "reset.css";
+
+
+$bg: #e2e2e2;
+$blank: #e8e8e8;
+$textXL: xx-large;
+$textL: medium;
+$textM: small;
+$textS: x-small;
+
+$contd: white;
+
+
+
+// @font-face {
+//   font-family: 'webdings';
+//         url('webdings.woff') format('woff'),    /* FF 3.6, Chrome 5, IE9 */
+//         url('webdings.ttf') format('truetype'), /* Opera, Safari */
+//         url('webdings.svg#font') format('svg'); /* iOS */
+// }
+
+
+body {
+   font-family: sans-serif;
+   // background-color: $bg;
+   color: $contd;
+}
+
+
+h1 { //NOME ARTISTA DEEP
+   font-size: $textXL;
+   // text-transform: uppercase;
+   font-weight: bold;
+   color: $contd;
+   text-align: left;
+}
+
+h2 { // ARTISTAS LISTA
+   font-size: $textM;
+   // text-transform: uppercase;
+   font-weight: bold;
+   padding: 5px;
+   border: 1px solid;
+   border-bottom: 7px solid;
+   text-align: left;
+   color: $contd;
+}
+
+h3 { //ABOUT
+   font-size: $textM;
+   // font-weight: bold;
+   letter-spacing: 1px;
+   padding: 5px;
+   border: $contd;
+   border: 1px solid;
+   border-bottom: 7px solid;
+   color: $contd;
+}
+
+h4 { //CAIXAS
+   font-size: $textM;
+   font-weight: bold;
+   padding: 5px;
+   color: $contd;
+}
+
+h5 { //CONVITE
+   font-size: $textXL;
+   text-align: left;
+   line-height: 30pt;
+   color: $contd;
+}
+
+
+h6 { //LETRAS POR BAIXO DO RELEASES / SKIP
+   font-size: $textS;
+   color: #ccc;
+   line-height: 1.2;
+   color: $contd;
+}
+
+
+p { //TEXTO CORRIDO
+   font-size: $textM;
+   text-align: left;
+   line-height: 15pt;
+   color: $contd;
+}
+
+p.nespera {
+
+}
+
+a {
+   font-size: $textM;
+   text-decoration: none;
+
+   &:hover {
+      font-style: italic;
+   }
+}
+
+// @media screen and (max-device-width: 800px) {
+//
+//    body {
+//       color: white;
+//    }
+//
+//
+//    h1 { //NOME ARTISTA DEEP
+//       color: white;
+//    }
+//
+//    h2 { // ARTISTAS LISTA
+//       color: white;
+//    }
+//
+//    h3 { //ABOUT
+//       color: white;
+//    }
+//
+//    h4 { //CAIXAS
+//       color: white;
+//    }
+//
+//    h5 { //CONVITE
+//       color: white;
+//    }
+//
+//
+//    h6 { //LETRAS POR BAIXO DO RELEASES / SKIP
+//       color: #cccccc;
+//
+//    }
+//
+//
+//    p { //TEXTO CORRIDO
+//       color: white;
+//    }
+//
+//    a {
+//       color: white;
+//
+//       &:hover {
+//          color: white;
+//       }
+//    }
+//
+// }

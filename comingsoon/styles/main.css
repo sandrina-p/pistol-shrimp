@@ -1,0 +1,150 @@
+body {
+  font-family: Monospace;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  font-family: sans-serif;
+  font-size: 12px; }
+
+input {
+  position: absolute;
+  top: 50vh;
+  left: 50vw;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); }
+
+#speakers {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: #ffffff;
+  text-align: center;
+  line-height: 96vh;
+  z-index: 3;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 15px; }
+
+#more {
+  position: absolute;
+  top: 5vh;
+  right: 5vh;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+  width: 25px;
+  height: 25px;
+  -webkit-transform: translate(-50%, 0);
+      -ms-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  line-height: 25px;
+  text-align: center;
+  cursor: pointer; }
+
+#about {
+  position: absolute;
+  top: 5vh;
+  right: 5vh;
+  display: none; }
+
+#b-eng, #b-pt {
+  position: absolute;
+  right: 290px;
+  top: 1vh;
+  text-transform: uppercase;
+  cursor: pointer; }
+
+#b-eng:hover {
+  color: black !important; }
+
+#b-pt:hover {
+  color: black !important; }
+
+#b-pt {
+  right: 260px;
+  color: #979797; }
+
+#t-eng,
+#t-pt {
+  position: absolute;
+  width: 300px;
+  max-height: 85vh;
+  top: 5vh;
+  right: 0;
+  padding: 10px;
+  text-align: left;
+  line-height: 18px;
+  background-color: rgba(255, 255, 255, 0.97); }
+
+#t-pt {
+  display: none; }
+
+#t-eng-m,
+#t-pt-m {
+  display: none; }
+
+@media screen and (max-width: 640px) {
+  body {
+    background-color: black; }
+
+  #more {
+    color: white !important; }
+
+  #more {
+    top: 10vh;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+        -ms-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+    font-size: 45px;
+    width: 25px;
+    height: 25px;
+    color: white; }
+
+  #speakers {
+    display: none; }
+
+  input {
+    font-size: 18px; }
+
+  #about {
+    top: 15vh;
+    right: 0;
+    font-size: 16px; }
+
+  #b-eng,
+  #b-pt {
+    color: rgba(255, 255, 255, 0.5);
+    position: relative;
+    right: 0px;
+    margin-right: 20px;
+    display: inline; }
+    #b-eng:hover,
+    #b-pt:hover {
+      color: white !important; }
+
+  #t-eng,
+  #t-pt {
+    display: none; }
+
+  #t-eng-m,
+  #t-pt-m {
+    overflow: scroll;
+    display: block;
+    position: absolute;
+    width: calc(100vw - 40px);
+    max-height: 60vh;
+    top: 8vh;
+    right: 0;
+    padding: 20px;
+    padding-bottom: 20px;
+    text-align: left;
+    line-height: 1.5;
+    background-color: black;
+    color: white; }
+
+  #t-pt-m {
+    display: none; } }
+
+/*# sourceMappingURL=main.css.map */

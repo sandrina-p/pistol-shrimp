@@ -1,0 +1,27 @@
+body {
+  background-color: black;
+  font-family: sans-serif;
+  overflow: hidden; }
+
+#videoshrimp {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: black; }
+  #videoshrimp iframe {
+    width: 50vw;
+    height: 50vh;
+   top: 25vh;
+   left: 25vw;
+   position: absolute;
+   }
+
+.controls {
+  display: none; }
+
+.sidedock {
+  display: none !important; }
+
+/*# sourceMappingURL=videoshrimp.css.map */

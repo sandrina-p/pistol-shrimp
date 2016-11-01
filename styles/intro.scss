@@ -1,0 +1,1364 @@
+@import "reset.css";
+
+//fundo content
+$fundd: black;
+$contd: white;
+
+//fundo intro
+$fundi: white;
+$conti: black;
+
+$handler: 30px;
+
+// BODY E INTRO
+*{
+   padding: 0;
+   margin: 0;
+}
+
+body {
+   // display: flex;
+   width: 100vw;
+   height: 100vh;
+   overflow: hidden;
+
+   #loading-bg {
+      position: absolute;
+      z-index: 2;
+      top: 0;
+      left: 0;
+      background-color: $fundi;
+      width: 100vw;
+      height: 100vh;
+
+    //   display: none;
+   }
+
+   #loading-content{
+      position: absolute;
+      top: 20vw;
+      width: 40vw;
+      height: 10vw;
+      left: 30vw;
+      background-color: $fundi;
+      // box-shadow: 0px 0px 10px 1vw $fundi;
+      z-index: 3;
+
+    //   display: none;
+
+
+      #skip {
+         position: absolute;
+         top: 3vw;
+         left: 50%;
+         width: calc(100% - 20px);
+         transform: translate(-50%, -50%);
+         text-align: center;
+         color: $conti;
+
+         p {
+            text-align: center;
+            color: $conti;
+         }
+      }
+
+      #loading-icon {
+         position: absolute;
+         top: calc(3vw + 60px);
+         left: 50%;
+         transform: translate(-50%, -50%);
+         text-align: center;
+         color: $conti;
+
+         /*!
+          * Load Awesome v1.1.0 (http://github.danielcardoso.net/load-awesome/)
+          * Copyright 2015 Daniel Cardoso <@DanielCardoso>
+          * Licensed under MIT
+          */
+         .la-line-scale-pulse-out,
+         .la-line-scale-pulse-out > div {
+             position: relative;
+             -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                     box-sizing: border-box;
+         }
+         .la-line-scale-pulse-out {
+             display: block;
+             font-size: 0;
+             color: #fff;
+         }
+         .la-line-scale-pulse-out.la-dark {
+             color: #333;
+         }
+         .la-line-scale-pulse-out > div {
+             display: inline-block;
+             float: none;
+             background-color: currentColor;
+             border: 0 solid currentColor;
+         }
+         .la-line-scale-pulse-out {
+             width: 40px;
+             height: 32px;
+         }
+         .la-line-scale-pulse-out > div {
+             width: 4px;
+             height: 32px;
+             margin: 2px;
+             margin-top: 0;
+             margin-bottom: 0;
+             border-radius: 0;
+             -webkit-animation: line-scale-pulse-out .9s infinite cubic-bezier(.85, .25, .37, .85);
+                -moz-animation: line-scale-pulse-out .9s infinite cubic-bezier(.85, .25, .37, .85);
+                  -o-animation: line-scale-pulse-out .9s infinite cubic-bezier(.85, .25, .37, .85);
+                     animation: line-scale-pulse-out .9s infinite cubic-bezier(.85, .25, .37, .85);
+         }
+         .la-line-scale-pulse-out > div:nth-child(3) {
+             -webkit-animation-delay: -.9s;
+                -moz-animation-delay: -.9s;
+                  -o-animation-delay: -.9s;
+                     animation-delay: -.9s;
+         }
+         .la-line-scale-pulse-out > div:nth-child(2),
+         .la-line-scale-pulse-out > div:nth-child(4) {
+             -webkit-animation-delay: -.7s;
+                -moz-animation-delay: -.7s;
+                  -o-animation-delay: -.7s;
+                     animation-delay: -.7s;
+         }
+         .la-line-scale-pulse-out > div:nth-child(1),
+         .la-line-scale-pulse-out > div:nth-child(5) {
+             -webkit-animation-delay: -.5s;
+                -moz-animation-delay: -.5s;
+                  -o-animation-delay: -.5s;
+                     animation-delay: -.5s;
+         }
+         .la-line-scale-pulse-out.la-sm {
+             width: 20px;
+             height: 16px;
+         }
+         .la-line-scale-pulse-out.la-sm > div {
+             width: 2px;
+             height: 16px;
+             margin: 1px;
+             margin-top: 0;
+             margin-bottom: 0;
+         }
+         .la-line-scale-pulse-out.la-2x {
+             width: 80px;
+             height: 64px;
+         }
+         .la-line-scale-pulse-out.la-2x > div {
+             width: 8px;
+             height: 64px;
+             margin: 4px;
+             margin-top: 0;
+             margin-bottom: 0;
+         }
+         .la-line-scale-pulse-out.la-3x {
+             width: 120px;
+             height: 96px;
+         }
+         .la-line-scale-pulse-out.la-3x > div {
+             width: 12px;
+             height: 96px;
+             margin: 6px;
+             margin-top: 0;
+             margin-bottom: 0;
+         }
+         /*
+          * Animation
+          */
+
+          @keyframes line-scale-pulse-out { 0% { transform: scaley(1); } 50% { transform: scaley(.3); } 100% { transform: scaley(1); } }
+      }
+
+      h6 {
+         position: absolute;
+         top: calc(3vw + 60px);
+         left: 50%;
+         transform: translate(-50%, -50%);
+         text-align: center;
+         color: $conti;
+         cursor: help;
+         font-size: small;
+         font-weight: bold;
+         display: none;
+      }
+
+      p.friendly {
+         position: absolute;
+         bottom: -17vw;
+         color: #828282;
+         font-size: x-small;
+         line-height: 1.5;
+         background-color: white;
+         padding: 10px;
+         left: 30%;
+      }
+   }
+
+   canvas {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 2;
+
+    //   display: none;
+   }
+}
+
+//MAIN
+main {
+   position: relative;
+   height: 100vh;
+   width: 100vw;
+   z-index: 1;
+   padding-bottom:30px;
+
+   ul#intro {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      background-color: $fundd;
+
+      li {
+         position: relative;
+         height: 100vh;
+         width: 25vw;
+         text-align: center;
+         box-sizing:border-box;
+         transition: all 450ms ease-in-out;
+         background-color: $fundd;
+
+         &:nth-child(1) {
+            .m-title {
+               margin-top: 40vh;
+               z-index: 2;
+            }
+         }
+         &:nth-child(2) {
+            .m-title {
+               margin-top: 50vh;
+            }
+         }
+         &:nth-child(3) {
+            .m-title {
+               margin-top: 45vh;
+            }
+         }
+         &:nth-child(4) {
+            .m-title {
+               margin-top: 52.5vh;
+               // z-index: 2;
+
+            }
+         }
+
+         .m-title {
+            position: relative;
+            width: 100px;
+            height: 50px;
+            transform: rotate(-90deg);
+            cursor: pointer;
+            margin-left: calc(50% - 50px);
+            transition: all 450ms ease-in-out, opacity 100ms ease-in-out;
+            // z-index: 2;
+
+            h4 {
+               width: 80px;
+               height: 30px;
+               line-height: 30px;
+               color: $contd;
+               border: 2px solid;
+               border-bottom: 8px solid;
+            }
+
+            h6 {
+               display: none;
+               position: absolute;
+               width: 300px !important;
+               margin-left: -105px !important;
+               margin-top: 20px;
+
+               &:after {
+                  content: "keep an eye out, \A there's something hidden in each release!";
+                  white-space: pre;
+               }
+            }
+         }
+
+         .m-content {
+            position: absolute;
+            width: calc(100vw - 171px);
+            height: 100vh;
+            top: 0;
+            left: 0;
+            overflow: hidden;
+            visibility: hidden;
+         }
+
+
+         .ad-window {
+            position: absolute;
+            height: auto;
+            background-color: black;
+            padding: 10px;
+            padding-top: 40px;
+            z-index: 1;
+            cursor: default;
+            overflow: hidden;
+
+            .ad-saveclick {
+               position: absolute;
+               width: calc(100% + 10px);
+               height: calc(100% + 10px);
+               z-index: -1;
+            }
+
+            .handle {
+               position: absolute;
+               top: 0;
+               left: 0;
+               width: 100%;
+               height: 30px;
+               background-color: white;
+               cursor: move;
+            }
+
+            svg.resizer {
+               position: absolute;
+               width: 15px;
+               height: 15px;
+               right: 0;
+               bottom: 0;
+               color: white;
+               fill: white;
+               cursor: move;
+            }
+         }
+
+      }
+   }
+}
+
+///////// ABOUT /////////
+section#about {
+   position: relative;
+   width: calc(100vw - 171px);
+   height: 100vh;
+
+   .ad-window {
+      display: block !important;
+   }
+
+   #about-content {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: calc(100vw - 171px);
+      height: 100vh;
+
+      a {
+         color: white !important;
+      }
+
+      .ad-window {
+         line-height: 10px;
+      }
+
+      .w-interrogacao { // ?
+         width: 350px;
+         height: auto;
+         top: 110px;
+         left: 300px;
+         line-height: 20px;
+         font-size: 12px;
+         text-align: left;
+         overflow-y: scroll;
+
+         h1 {
+            font-size: medium;
+         }
+
+      }
+
+      .w-contact { // contact
+         width: 400px;
+         height:  auto;
+         top: 350px;
+         left: 105px;
+         font-size: 12px;
+         line-height: 60px;
+
+         span {
+            color: black;
+         }
+
+         h1{
+            font-size: medium;
+            line-height: 1.5;
+         }
+      }
+
+      .w-video { // ?
+         width: 600px;
+         height: auto;
+         top: 270px;
+         left: 60px;
+         line-height: 20px;
+         font-size: 12px;
+         padding: 0;
+         padding-top: 20px;
+         display: none !important;
+
+         iframe {
+            width: 100%;
+            height: 100%;
+         }
+      }
+
+      .w-source { // ?
+         width: 210px;
+         height: 300px;
+         top: 210px;
+         left: 715px;
+         line-height: 20px;
+         font-size: 12px;
+
+         h1 {
+            font-size: medium;
+         }
+      }
+
+      .w-book { // bookmarks
+         width: 170px;
+         height: 300px;
+         bottom: -185px;
+         right: -130px;
+         line-height: 20px;
+         font-size: 12px;
+
+         h1 {
+            font-size: medium;
+         }
+      }
+   }
+}
+
+///////// ARTISTS /////////
+section#art {
+   position: relative;
+   width: calc(100vw - 171px);
+   height: 100vh;
+
+   #artists {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: auto;
+      margin-top: 20vh;
+
+      .artists-item {
+         margin-top: 10vh;
+         cursor: pointer;
+         transition: all 250ms ease-in-out;
+
+         &:first-child {
+            transform: skew(30deg, 10deg) scale(1, 0.7);
+         }
+
+         &:nth-child(2) {
+            transform: skew(-30deg,0deg) scale(1.0,0.864);
+         }
+
+         &:nth-child(3) {
+            transform: skew(30deg,-10deg) scale(0.7,1);
+         }
+
+         &:nth-child(4) {
+            transform: skew(20deg,-5deg) scale(0.9,0.6);
+         }
+      }
+   }
+
+   #artists-deep {
+      position: absolute;
+      top: 0;
+      left: 0;
+      margin-top: -20vh;
+      width: calc(100vw - 171px);
+      height: 100vh;
+      display: none;
+
+      .artists-deep-list {
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: calc(100% - 20px);
+         height: 100vh;
+         display: none;
+         overflow: hidden;
+
+         #ad-dafuck {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: $fundd;
+         }
+
+
+         .ad-bg-x { // x porque o ad-bg normal nao dava. bruxaria ._.
+            position: absolute;
+            width: 100%;
+            height: 100vh;
+            background-color: rgba(70, 70, 70, 0.75);
+            cursor: url(../data/cross.gif), auto;
+            z-index: 1;
+
+            #dafuck { // DASHEEPLE
+               color:  $contd;
+               transition: opacity 250ms ease-in-out;
+               width: 100%;
+               top: 0;
+               left: 0;
+               z-index: 1;
+               font-size: 13px;
+               line-height: 11px;
+               font-family: monospace;
+               transition: all 5ms cubic-bezier(.87,.13,1,-0.06);
+               margin-left: 0;
+            }
+
+            // TEXTO DA SHEEPLE
+            @media screen and (max-width: 1300px) {
+               #dafuck {
+                  font-size: 12px;
+               }
+            }
+
+            @media screen and (max-width: 1200px) {
+               #dafuck {
+                  font-size: 11px;
+               }
+            }
+
+            @media screen and (max-width: 1100px) {
+               #dafuck {
+                  font-size: 10px;
+               }
+            }
+
+            @media screen and (max-width: 1025px) {
+               #dafuck {
+                  font-size: 9px;
+               }
+            }
+
+            @media screen and (max-width: 950px) {
+               #dafuck {
+                  font-size: 8px;
+               }
+            }
+
+            #daghosts {
+               position: absolute;
+               width: 100%;
+               line-height: 100vh;
+               top: 0;
+               left: 0;
+               z-index: 1;
+               font-size: 13px;
+               font-family: monospace;
+               color: rgba(255, 255, 255, 0.9);
+               opacity: 0;
+               animation-delay: 500ms;
+               transition: all 5s cubic-bezier(.87,.13,1,-0.06),
+            }
+         }
+
+         .w-img { //IMG
+            padding: 0;
+            width: 500px;
+            height: auto;
+            top: 50px;
+            left: 150px;
+            display: none;
+
+            img {
+               width: 100%;
+               height: 100%;
+               margin-bottom: -3px;
+            }
+         }
+
+         .w-bio { // BIO
+            width: 300px;
+            height: auto;
+            top: 270px;
+            left: 60px;
+            line-height: 20px;
+            font-size: 12px;
+            display: none;
+
+            h1 {
+               line-height: 80px;
+               text-align: left;
+            }
+         }
+
+         .w-link { // LINKS
+            top: 600px;
+            left: 460px;
+            height: 30px;
+            display: none;
+
+            .ad-contentt { //contenTT pq o contenT deixou de funcionar. bruxaria.
+               position: relative;
+               padding-bottom: 5px;
+
+               img {
+                  display: block;
+                  height: 15px;
+                  padding: 5px 10px;
+                  display: inline;
+               }
+            }
+         }
+
+         .w-close { // CLOSE
+            display: none;
+         }
+
+      }
+   }
+}
+
+///////// RELEASES /////////
+section#releases{
+   position: relative;
+   width: calc(100vw - 171px);
+   height: 100vh;
+
+   #releases-list {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: auto;
+      margin-top: 20vh;
+
+      .release-item {
+         margin-top: 10vh;
+         cursor: pointer;
+         transition: all 250ms ease-in-out;
+
+         &:first-child {
+            transform: skew(30deg, 10deg) scale(1, 0.7);
+
+            img {
+               border-radius: 400px;
+            }
+         }
+
+         &:nth-child(2) {
+            transform: skew(-30deg,0deg) scale(1.0,0.864);
+         }
+
+         &:nth-child(3) {
+            transform: skew(30deg,-10deg) scale(0.7,1);
+         }
+
+         &:nth-child(4) {
+            transform: skew(20deg,-5deg) scale(0.9,0.6);
+         }
+
+         img {
+            position: absolute;
+            top: 0;
+            width: 400px;
+            // display: none;
+            margin-left: -10px;
+            margin-top: -10px;
+         }
+
+         a {
+            color: $fundd !important;
+            text-decoration: none;
+         }
+
+         h2 {
+            position: relative;
+            cursor: pointer;
+            width: 15px;
+            height: 15px;
+
+            span {
+               color: rgba(255, 255, 255, 0);
+            }
+         }
+
+         .info {
+            position: relative;
+            border-left: 1px solid;
+            padding: 0px 5px;
+            padding-bottom: 0;
+            overflow: hidden;
+            max-height: 0;
+            transition: all 250ms ease-in-out;
+            color: $contd;
+         }
+      }
+   }
+}
+
+///////// EVENTO /////////
+section#event {
+   position: absolute;
+   width: calc(100vw - 171px);
+   height: 100vh;
+   overflow-y: scroll;
+
+   #event-game {
+      position: absolute;
+      width: 100%;
+      height: 100vh;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      display: none !important;
+
+      #container{
+         width: 500px;
+         height: 300px;
+         text-align: center;
+         position: absolute;
+         left: 50%;
+         top: 50%;
+         transform: translate(-50%, -50%);
+         z-index: 9999;
+
+         p {
+            color: white;
+            text-align: center;
+         }
+
+         #jogo {
+            canvas {
+               width: auto;
+               position: relative;
+               margin-top: 40px;
+            }
+
+            #gamee {
+               background-color: #000000;
+            }
+         }
+      }
+
+      #game-bg {
+         width: 100%;
+         height: 100%;
+         position: absolute;
+         background-color: rgba(70, 70, 70, 0.75);
+         cursor: url(../data/cross.gif), auto;
+      }
+   }
+
+   p.noevent {
+      color: gray;
+      margin-top: 50px;
+      margin-bottom: -50px;
+      text-align: center;
+   }
+
+   #events-list {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: auto;
+      margin-top: 10vh;
+      height: calc(90vh - 100px);
+      overflow: scroll;
+
+      .event-item {
+         margin-top: 10vh;
+         cursor: pointer;
+         transition: all 250ms ease-in-out;
+
+         h2 {
+            position: relative;
+            cursor: pointer;
+            width: 15px;
+            height: 15px;
+
+            span {
+               color: rgba(255, 255, 255, 0);
+            }
+         }
+
+         .event-deep {
+            text-align: center;
+            max-height: 0px;
+            overflow: hidden;
+            transition: all 250ms ease-in-out;
+
+
+            .info {
+               position: relative;
+               border-left: 1px solid;
+               padding: 0px 5px;
+               padding-bottom: 0;
+               overflow: hidden;
+               transition: all 250ms ease-in-out;
+               color: $contd;
+
+               a {
+                  color: $fundd !important;
+                  text-decoration: none;
+                  // font-style: italic;
+               }
+            }
+
+            img {
+               position: relative;
+               width: 400px;
+               display: block;
+               margin-bottom: 20px;
+               margin-top: 20px;
+            }
+
+            iframe {
+               display: block;
+               width: 400px;
+               height: 230px;
+            }
+         }
+      }
+   }
+}
+
+///////// FOOTER /////////
+footer {
+   position: absolute;
+   bottom: 0;
+   margin-top: 10px;
+   z-index: 3;
+   width: 100vw;
+   height: 30px;
+   text-align: right;
+   display: flex !important;
+   justify-content: center;
+
+   h6 {
+      color: gray;
+   }
+   img {
+      height: 13px;
+   }
+   a {
+      margin-left: 10px;
+   }
+}
+
+loadingdiv {
+   display: none;
+}
+#events-list::-webkit-scrollbar {
+   display: none;
+}
+
+// .ad-window::-webkit-scrollbar {
+//    display: none;
+// }
+
+/////------------------------------------//////////
+
+//VARIAVEIS MOBILE
+$margin-caixa: 40px;
+$coluna: 450px;
+
+//////////// TABLET (+ MOBILE)
+   @media screen and (max-width: 1024px) {
+
+      // BODY E INTRO
+      body {
+         overflow: scroll;
+         background-color: $fundd;
+
+         #loading-bg {
+            display: none;
+
+         }
+
+         #loading-content{
+            top: 20vw;
+            left: 0;
+            width: 100vw;
+            height: 100vw;
+            display: none;
+
+            #skip {
+               top: 50vh;
+               width: calc(100% - 20px);
+               transform: translate(-50%, -50%);
+            }
+
+            h6 {
+               top: calc(50vh + 60px);
+               height: 50px;
+            }
+         }
+
+         canvas {
+            top: 30vh;
+            left: 50vw;
+            transform: translate(-50%, -50%);
+            z-index: 3;
+            display: none;
+
+         }
+      }
+
+
+      main {
+          ul#intro {
+              li {
+                  //... JANELAS
+                  .ad-window { //COMUM EM TODAS AS WINDOWS
+                     box-shadow:  0px 0px 0px rgba(#030303, 0.85);
+                     position: relative;
+                     padding-top: 0;
+
+                     .ad-saveclick {
+                        display: none;
+                     }
+
+                     svg.resizer {
+                        display: none;
+                     }
+                  }
+                  .draggable {
+                     position: relative;
+                  }
+
+                  .ad-window {
+                      .handle {
+                          display: none;
+                      }
+                  }
+              }
+          }
+      }
+      ///////// ABOUT /////////
+      section#about {
+         padding-top: 100px; // para se ver a caixa por baixo
+
+         #about-content {
+            position: relative !important;
+            height: 100vw;
+            overflow-y: scroll;
+
+            .ad-window {
+               position: relative;
+               width: auto;
+               max-width: $coluna;
+               padding: 0 20px;
+               margin: auto;
+
+               p {
+                  color: white !important;
+               }
+            }
+
+            .w-interrogacao,
+            .w-contact,
+            .w-video,
+            .w-book { // ?
+               width: auto;
+               top: auto;
+               left: auto;
+            }
+
+            .w-source { // ?
+               display: none !important;
+            }
+
+
+            // COISAS FANCYS DRAGGING
+            .draggable {
+               display: none;
+               position: relative;
+
+               .handle {
+                  display: none;
+               }
+            }
+         }
+      }
+
+      ///////// ARTISTS /////////
+      section#art {
+         position: relative;
+         height: 100vw;
+         padding-top: 100px; // para se ver a caixa por baixo
+
+         #artists {
+            margin-top: 10px;
+            height: auto;
+
+            .artists-item {
+               margin-top: $margin-caixa;
+            }
+         }
+         #artists-deep {
+            position: relative;
+            height: calc( 100vh - 130px);
+            margin-top: -300px;
+            margin-bottom: 25px;
+            overflow-y: scroll;
+            overflow-x: hidden;
+
+            .artists-deep-list {
+               position: relative;
+               height: auto;
+               background-color: $fundd;
+
+               .ad-window {
+                  width: auto;
+                  max-width: $coluna;
+                  margin: auto;
+               }
+
+               .ad-bg {
+                  position: relative;
+
+                  #dafuck { // DASHEEPLE
+                     font-size: 4px;
+                     line-height: 6px;
+                  }
+
+                  #daghosts {
+                     font-size: 9px;
+                     display: none;
+                  }
+               }
+
+               .ad-bg-x {
+                   background-color: transparent;
+
+                   #dafuck { // DASHEEPLE
+                      font-size: 4px;
+                      line-height: 6px;
+                      position: relative;
+                   }
+
+                   #daghosts {
+                      font-size: 9px;
+                      display: none;
+                   }
+                }
+
+
+
+               .w-bio,
+               .w-link,
+               .w-img {
+                  width: auto;
+                  height: auto;
+                  top: auto;
+                  left: auto;
+               }
+
+               #ad-dafuck {
+                   position: relative;
+               }
+
+               .w-img { //IMG
+                  padding: 0;
+                  max-width: calc(100vw - 171px);
+               }
+
+               .w-link { // LINKS
+                  img {
+                     height: 15px;
+                     padding: 0px 10px;
+                  }
+               }
+
+               .w-close { // CLOSE
+                  width: 500px;
+                  height: 10px;
+                  line-height: 12px;
+                  font-size: 12px;
+                  text-align: right;
+                  z-index: 2;
+                  color: $contd;
+                  background-color: $fundd;
+                  display: block;
+                  min-height: 10px;
+               }
+
+
+               // COISAS FANCYS DRAGGING
+               .draggable {
+                  display: none;
+
+                  .handle {
+                     display: none;
+                  }
+               }
+            }
+         }
+      }
+
+
+      ///////// RELEASES /////////
+      section#releases{
+         position: relative;
+         height: auto;
+
+         #releases-list {
+            margin-top: 150px;
+
+            .release-item {
+               margin-top: 20px;
+               transform: skew(0deg, 0deg) scale(1) !important;
+
+               img {
+                  display: none;
+               }
+
+               .info {
+                  max-height: 100px;
+               }
+
+               a {
+                  color: $contd !important;
+               }
+            }
+         }
+      }
+
+      ///////// EVENTO /////////
+      section#event {
+         position: relative;
+         padding-top: 110px;
+
+         #event-game {
+            display: none;
+         }
+
+         #events-list {
+            margin-top: $margin-caixa;
+            height: auto;
+            overflow: visible;
+
+            .event-item {
+               margin-top: $margin-caixa;
+               height: auto;
+               padding: 0;
+
+
+               h2 {
+                  margin-left: 0;
+               }
+
+               .event-deep {
+                  .info {
+                     margin-left: 0;
+                  }
+               }
+            }
+         }
+      }
+
+      ///////// FOOTER /////////
+      footer {
+         text-align: center;
+         width: 100vw;
+         margin-top: $margin-caixa !important;
+         z-index: 2;
+         display: block !important;
+         margin-left: 0;
+         height: 50px;
+         position:absolute;
+         left:0;
+         bottom: 20px;
+
+         img {
+            margin-top: 5px;
+         }
+      }
+
+      // TEXTOS
+      h4 {
+         color: white !important;
+      }
+   }
+
+
+//////////// MOBILE
+   @media screen and (max-width: 600px) {
+
+      // BODY E INTRO
+
+      #wrapper { // footer no bottom sempre
+         min-height:100vh;
+         position:relative;
+      }
+
+      main {
+         height: auto;
+         overflow-x: hidden;
+         background-color: $fundd;
+         padding-bottom: 150px;
+
+         ul#intro {
+            position: relative;
+            height: auto;
+            display: block;
+
+            li {
+               height: auto;
+               width: 100vw !important;
+               background-color: $fundd !important;
+
+               h4 {
+                  width: 80px !important;
+               }
+
+               .m-title {
+                  margin-top: $margin-caixa !important;
+                  transform: rotate(0deg);
+
+                  h6 {
+                     margin-top: 40px;
+
+                     &:after {
+                        content: "Our releases use keyboard and mouse inputs.\A These are not available on mobile devices.";
+                     }
+                  }
+               }
+
+               #caixa-event {
+                  margin-left: calc(50vw - 50px);
+               }
+
+               .m-content {
+                  position: relative;
+                  width: 100vw;
+                  height: auto;
+                  max-height: 0px;
+                  visibility: visible;
+                  transition: all .5s ease-in-out;
+
+               }
+
+            }
+         }
+      }
+
+
+      ///////// ABOUT /////////
+      section#about {
+         width: 100vw;
+         height: auto;
+         text-align: center;
+         padding-top: 0;
+         padding-bottom: 50px;
+
+         #about-content {
+            height: auto;
+            width: 100vw;
+            background-color: $fundd;
+
+            .ad-window {
+               width: auto;
+               max-width: $coluna;
+            }
+
+            .w-interrogacao,
+            .w-contact,
+            .w-video,
+            .w-book {
+               width: auto;
+               top: auto;
+               left: auto;
+            }
+         }
+      }
+
+      ///////// ARTISTS /////////
+      section#art {
+         width: 100vw;
+         height: auto;
+         padding-top: 0;
+         padding-bottom: 50px;
+
+         #artists-deep {
+            width: 100vw;
+            height: auto;
+            margin-top: -250px;
+
+            .artists-deep-list {
+               width: 100vw;
+
+               .w-img { //IMG
+                  max-width: 100vw;
+                  width: 100vw;
+               }
+
+               .w-close {
+                  width: auto;
+               }
+            }
+         }
+      }
+
+      ///////// RELEASES /////////
+      section#releases{
+         width: 100vw;
+         padding-top: 0;
+         padding-bottom: 50px;
+
+         #releases-list {
+            margin-top: 70px;
+         }
+      }
+
+      ///////// EVENTO /////////
+      section#event {
+         width: 100vw;
+         height: auto;
+         overflow-y: visible;
+         padding-top: 0;
+         padding-bottom: 50px;
+
+         #events-list {
+            .event-item {
+               width: 100vw;
+
+               h2 {
+                  margin-left: 5vw;
+               }
+
+               .event-deep {
+                  width: 100vw;
+
+                  .info {
+                     margin-left: 5vw;
+                  }
+
+                  img {
+                     width: 100vw;
+                  }
+
+                  iframe {
+                     width: 100vw;
+                     height: 100;
+                  }
+               }
+            }
+         }
+      }
+   }

@@ -1,0 +1,83 @@
+body {
+    background-color: black;
+    font-family: sans-serif;
+    overflow: hidden;
+}
+
+#quotes {
+   width: 100vw;
+   height: 100vh;
+   position: absolute;
+   top: 0;
+   left: 0;
+   background-color: white;
+
+   .contentor {
+      position: absolute;
+      top: 50vh;
+      left: calc(50vw - 300px);
+      transform: translate(0, -50%);
+      width: 600px;
+      height: 200px;
+      box-sizing:border-box;
+      border: 2px solid;
+      border-bottom: 12px solid;
+      background-color: white;
+   }
+
+   .autor {
+      position: absolute;
+      width: 560px;
+      height: 200px;
+      top: 20px;
+      left: 20px;
+      display: none;
+
+      h1 {
+         font-family: sans-serif;
+         font-weight: bold;
+         line-height: 5pt;
+         font-size: 20pt;
+      }
+
+      // TEMPOS E VELOCIDADES DAS LINHAS
+      .linha1 {
+         width: 0px;
+         white-space:nowrap;
+         overflow:hidden;
+         animation: type 2s steps(40, end);
+         animation-fill-mode: forwards;
+      }
+      .linha2 {
+         @extend .linha1;
+         animation-delay: 2s;
+      }
+      .linha3 {
+         @extend .linha1;
+         animation-delay: 4s;
+      }
+        .linha4 {
+         @extend .linha1;
+         animation-delay: 6s;
+      }
+       .linha5 {
+         @extend .linha1;
+         animation-delay: 8s;
+      }
+       .linha6 {
+         @extend .linha1;
+         animation-delay: 10s;
+      }
+
+
+      @keyframes type{
+          from { width: 10px; }
+
+          to { width: 560px; }
+      }
+   }
+
+   #autor1234etc {
+      //So para detectar mais facilmente no javascript
+   }
+}

@@ -1,0 +1,72 @@
+body {
+  background-color: black;
+  font-family: sans-serif;
+  overflow: hidden; }
+
+#quotes {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: white; }
+  #quotes .contentor {
+    position: absolute;
+    top: 50vh;
+    left: calc(50vw - 300px);
+    -webkit-transform: translate(0, -50%);
+        -ms-transform: translate(0, -50%);
+            transform: translate(0, -50%);
+    width: 600px;
+    height: 200px;
+    box-sizing: border-box;
+    border: 2px solid;
+    border-bottom: 12px solid;
+    background-color: white; }
+  #quotes .autor {
+    position: absolute;
+    width: 560px;
+    height: 200px;
+    top: 20px;
+    left: 20px;
+    display: none; }
+    #quotes .autor h1 {
+      font-family: sans-serif;
+      font-weight: bold;
+      line-height: 5pt;
+      font-size: 20pt; }
+    #quotes .autor .linha1, #quotes .autor .linha2, #quotes .autor .linha3, #quotes .autor .linha4, #quotes .autor .linha5, #quotes .autor .linha6 {
+      width: 0px;
+      white-space: nowrap;
+      overflow: hidden;
+      -webkit-animation: type 2s steps(40, end);
+              animation: type 2s steps(40, end);
+      -webkit-animation-fill-mode: forwards;
+              animation-fill-mode: forwards; }
+    #quotes .autor .linha2 {
+      -webkit-animation-delay: 2s;
+              animation-delay: 2s; }
+    #quotes .autor .linha3 {
+      -webkit-animation-delay: 4s;
+              animation-delay: 4s; }
+    #quotes .autor .linha4 {
+      -webkit-animation-delay: 6s;
+              animation-delay: 6s; }
+    #quotes .autor .linha5 {
+      -webkit-animation-delay: 8s;
+              animation-delay: 8s; }
+    #quotes .autor .linha6 {
+      -webkit-animation-delay: 10s;
+              animation-delay: 10s; }
+@-webkit-keyframes type {
+  from {
+    width: 10px; }
+  to {
+    width: 560px; } }
+@keyframes type {
+  from {
+    width: 10px; }
+  to {
+    width: 560px; } }
+
+/*# sourceMappingURL=quotes.css.map */

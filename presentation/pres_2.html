@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <title>Pistol Shrimp Quotes</title>
+   <link rel="stylesheet" href="styles/apresentacao.css">
+   <!-- <link rel="stylesheet" href="styles/quotes.css"> -->
+
+   <script type="text/javascript" src="js/libraries/jquery.js"></script>
+   <script type="text/javascript" src="js/libraries/p5.dom.js"></script>
+   <script type="text/javascript" src="js/libraries/p5.js"></script>
+   <script type="text/javascript" src="js/libraries/p5.sound.js"></script>
+   <script type="text/javascript" src="js/keysound.js"></script>
+
+
+
+
+   <style media="screen">
+   .numeros{
+      width: 25px;
+      height: 25px;
+      line-height: 25px;
+      outline: 1px solid white;
+      position: absolute;
+      top: 5vh;
+      left: 5vh;
+      z-index: 999;
+      text-align: center;
+      color: white;
+      background-color: none;
+      font-family: sans-serif;
+   }
+
+    #quotes {
+        display: block;
+    }
+
+   #n1{
+      margin-left: 35px;
+   }
+
+   #n2{
+      margin-left: 70px;
+   }
+
+   #n3{
+      margin-left: 105px;
+      background-color: white;
+      color:black;
+   }
+
+   #n4{
+      margin-left: 140px;
+   }
+
+   #n5{
+      margin-left: 175px;
+   }
+   </style>
+
+
+</head>
+
+<body>
+
+   <div class="numeros" id="n1">0</div>
+   <div class="numeros" id="n2">1</div>
+   <div class="numeros" id="n3">2</div>
+   <div class="numeros" id="n4">3</div>
+   <div class="numeros" id="n5">4</div>
+
+<!--
+   <div id="quotes">
+
+      <div class="contentor">
+
+         <div class="autor" id="autor1">
+            <h1>Alex Winter</h1>
+            <div class="linha1">
+               There's actually no data that proves that the free culture has had any negative
+            </div>
+            <div class="linha2">
+            impact on the sale of anything ever.
+            </div>
+         </div>
+
+         <div class="autor" id="autor2">
+            <h1>Dylan Lewis</h1>
+            <div class="linha1">
+            That's forward thinking, that's thinking what's the technology that stays today,
+            </div>
+            <div class="linha2">
+            what's gonna encourage people to not just download the album for free, but,
+             </div>
+             <div class="linha3">
+            want to immerse themselves in a, in a more full, like, that's enticing to me,
+             </div>
+             <div class="linha4">
+            I want that.
+             </div>
+         </div>
+
+         <div class="autor" id="autor3">
+            <h1>Moby</h1>
+             <div class="linha1">
+            I think one of the biggest failings is that the music business and record
+             </div>
+             <div class="linha2">
+            companies have treated listeners terribly for a long time, you know, like,
+             </div>
+             <div class="linha3">
+            overcharging for CDs in the era of CDs, hum, punishing people for
+             </div>
+             <div class="linha4">
+            downloading music and, hum, basically trying to make people fell guilty for
+             </div>
+             <div class="linha5">
+            listening to music and I think that created a strange and a very unhealthy
+            <div class="linha6">
+            climate around the release of music.
+            </div>
+         </div>
+          </div>
+
+         <div class="autor" id="autor4">
+            <h1>Patrick Dixon</h1>
+
+            <div class="linha1">
+            What it means is an unparalleled explosion of creative talent in the music
+             </div>
+             <div class="linha2">
+            industry and in the video industry in fact, most of it wouldn't even be called an
+             </div>
+             <div class="linha3">
+            industry at all because it's given away for free.
+             </div>
+         </div>
+
+         <div class="autor" id="autor5">
+            <h1>Peter Sunde</h1>
+
+            <div class="linha1">
+            Well, it's not a question about if or if not, it's, it's not up to anyone to decide,
+             </div>
+             <div class="linha2">
+            it's up to the people who wants the content to be free or not to decide, and
+             </div>
+             <div class="linha3">
+            people have basically said I want this for free or I'm not gonna have it anyway,
+             </div>
+             <div class="linha4">
+            I'm gonna get something else. You cannot discuss free or not because its not a
+             </div>
+             <div class="linha5">
+            choice to make it's already, you know, the file was already downloaded so
+             </div>
+             <div class="linha6">
+            there's no meaning discussing if or not.
+         </div>
+          </div>
+
+         <div class="autor" id="autor6">
+            <h1>Wyclef Jean</h1>
+
+            <div class="linha1">
+            If the music industry knew what technology was gonna do I think that,
+             </div>
+             <div class="linha2">
+            with the web and everything, I think they would've adapted and bought
+             </div>
+             <div class="linha3">
+            those companies and actually made those companies part of the music
+             </div>
+             <div class="linha4">
+            industry today.
+             </div>
+         </div>
+
+         <div class="autor" id="autor7">
+            <h1>South Park</h1>
+
+             <div class="linha1">
+            Man must learn to think of these horrible outcomes before he acts
+             </div>
+             <div class="linha2">
+            selfishly,  or else, I fear recording artists will be forever doomed to a life of
+             </div>
+             <div class="linha3">
+            only semi-luxury.
+             </div>
+         </div>
+      </div>
+
+      <div class="keyss">q</div>
+      <div class="keyss">w</div>
+      <div class="keyss">e</div>
+      <div class="keyss">r</div>
+      <div class="keyss">t</div>
+      <div class="keyss">y</div>
+
+   </div> -->
+
+   <div id="quotes">
+
+      <div class="contentor">
+
+         <div class="autor" id="autor1">
+            <h1>Alex Winter</h1>
+            <div class="linha1">
+               There's actually no data that proves that the free culture has had any negative
+            </div>
+            <div class="linha2">
+            impact on the sale of anything ever.
+            </div>
+         </div>
+
+         <div class="autor" id="autor2">
+            <h1>Dylan Lewis</h1>
+            <div class="linha1">
+            That's forward thinking, that's thinking what's the technology that stays today,
+            </div>
+            <div class="linha2">
+            what's gonna encourage people to not just download the album for free, but,
+            </div>
+            <div class="linha3">
+            want to immerse themselves in a, in a more full, like, that's enticing to me,
+            </div>
+            <div class="linha4">
+            I want that.
+            </div>
+         </div>
+
+         <div class="autor" id="autor3">
+            <h1>Moby</h1>
+            <div class="linha1">
+            I think one of the biggest failings is that the music business and record
+            </div>
+            <div class="linha2">
+            companies have treated listeners terribly for a long time, you know, like,
+            </div>
+            <div class="linha3">
+            overcharging for CDs in the era of CDs, hum, punishing people for
+            </div>
+            <div class="linha4">
+            downloading music and, hum, basically trying to make people fell guilty for
+            </div>
+            <div class="linha5">
+            listening to music and I think that created a strange and a very unhealthy
+            <div class="linha6">
+            climate around the release of music.
+            </div>
+         </div>
+          </div>
+
+         <div class="autor" id="autor4">
+            <h1>Patrick Dixon</h1>
+
+            <div class="linha1">
+            What it means is an unparalleled explosion of creative talent in the music
+            </div>
+            <div class="linha2">
+            industry and in the video industry in fact, most of it wouldn't even be called an
+            </div>
+            <div class="linha3">
+            industry at all because it's given away for free.
+            </div>
+         </div>
+
+         <div class="autor" id="autor5">
+            <h1>Peter Sunde</h1>
+
+            <div class="linha1">
+            Well, it's not a question about if or if not, it's, it's not up to anyone to decide,
+            </div>
+            <div class="linha2">
+            it's up to the people who wants the content to be free or not to decide, and
+            </div>
+            <div class="linha3">
+            people have basically said I want this for free or I'm not gonna have it anyway,
+            </div>
+            <div class="linha4">
+            I'm gonna get something else. You cannot discuss free or not because its not a
+            </div>
+            <div class="linha5">
+            choice to make it's already, you know, the file was already downloaded so
+            </div>
+            <div class="linha6">
+            there's no meaning discussing if or not.
+         </div>
+          </div>
+
+         <div class="autor" id="autor6">
+            <h1>Wyclef Jean</h1>
+
+            <div class="linha1">
+            If the music industry knew what technology was gonna do I think that,
+            </div>
+            <div class="linha2">
+            with the web and everything, I think they would've adapted and bought
+            </div>
+            <div class="linha3">
+            those companies and actually made those companies part of the music
+            </div>
+            <div class="linha4">
+            industry today.
+            </div>
+         </div>
+
+         <div class="autor" id="autor7">
+            <h1>South Park</h1>
+
+            <div class="linha1">
+            Man must learn to think of these horrible outcomes before he acts
+            </div>
+            <div class="linha2">
+            selfishly,  or else, I fear recording artists will be forever doomed to a life of
+            </div>
+            <div class="linha3">
+            only semi-luxury.
+            </div>
+         </div>
+      </div>
+
+      <div class="keyss">q</div>
+      <div class="keyss">w</div>
+      <div class="keyss">e</div>
+      <div class="keyss">r</div>
+      <div class="keyss">t</div>
+      <div class="keyss">y</div>
+
+      <!-- <script type="text/javascript" src="js/quotes.js"></script> -->
+
+   </div>
+
+
+   <script type="text/javascript" src="js/quotes.js"></script>
+
+
+   <script language="javascript" src="js/terminal.js"></script>
+
+
+
+
+</body>
+</html>

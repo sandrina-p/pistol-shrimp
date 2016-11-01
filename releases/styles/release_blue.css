@@ -1,0 +1,191 @@
+@import url(reset.css);
+body {
+  background-color: black;
+  font-family: sans-serif;
+  font-size: 12px;
+  letter-spacing: 1px;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden; }
+  body canvas {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0; }
+  body #tip {
+    position: absolute;
+    top: calc(50vh - 110px);
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    color: white;
+    z-index: 2;
+    text-align: center;
+    width: 397;
+    line-height: 17px; }
+  body #loading {
+    position: absolute;
+    top: calc(50% - 150px);
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    z-index: 2;
+    text-align: center;
+    color: white; }
+  body #keyboard {
+    position: absolute;
+    top: calc(50% + 1px);
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 490px; }
+    body #keyboard .keyline {
+      margin: 2px; }
+      body #keyboard .keyline .keyss {
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+        line-height: 25px;
+        margin: 1px;
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        text-align: center;
+        color: rgba(255, 255, 255, 0); }
+      body #keyboard .keyline .daone {
+        border: 1px solid #d2d2d2;
+        color: black;
+        background: white; }
+      body #keyboard .keyline #k-del {
+        width: 45px; }
+      body #keyboard .keyline #k-tab {
+        width: 40px; }
+      body #keyboard .keyline #k-capps {
+        width: 49px; }
+      body #keyboard .keyline #k-Lshift {
+        width: 45px; }
+      body #keyboard .keyline #k-Rshift {
+        width: 61px; }
+      body #keyboard .keyline #k-space {
+        width: 195px; }
+      body #keyboard .keyline #k-enter {
+        width: 31px; }
+      body #keyboard .keyline #k-fn {
+        width: 20px; }
+      body #keyboard .keyline #k-barra {
+        width: 56px; }
+      body #keyboard .keyline #k-alt {
+        width: 16px; }
+      body #keyboard .keyline #k-left {
+        position: absolute;
+        height: 11px;
+        margin-top: 15px;
+        margin-left: 4px; }
+      body #keyboard .keyline #k-top {
+        position: absolute;
+        height: 11px;
+        margin-left: 39px; }
+      body #keyboard .keyline #k-down {
+        position: absolute;
+        height: 11px;
+        margin-top: 15px;
+        margin-left: 39px; }
+      body #keyboard .keyline #k-right {
+        position: absolute;
+        height: 11px;
+        margin-top: 15px;
+        margin-left: 74px; }
+  body #linha2 {
+    padding-bottom: 2px; }
+  body #kmouse {
+    position: absolute;
+    top: calc(50% + 140px);
+    left: 50vw;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    z-index: 2;
+    color: white;
+    max-width: 100px;
+    text-align: center; }
+    body #kmouse img {
+      width: 50px; }
+    body #kmouse p {
+      margin-top: 10px;
+      margin-left: 10px; }
+  body #downloadd {
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    left: 80vw;
+    width: 5px;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0);
+    cursor: help;
+    display: none; }
+    body #downloadd:hover {
+      background-color: white; }
+
+#getapc {
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-color: black;
+  z-index: 9;
+  display: none; }
+  #getapc #contentorr {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: calc(100vw - 10px);
+    height: 200px;
+    box-sizing: border-box;
+    border: 2px solid;
+    border-bottom: 12px solid;
+    background-color: black;
+    color: white; }
+    #getapc #contentorr #mensagem {
+      position: absolute;
+      font-weight: bold;
+      padding-right: 5vw;
+      font-size: 15pt;
+      left: 4vw;
+      top: 50%;
+      -webkit-transform: translate(0%, -50%);
+          -ms-transform: translate(0%, -50%);
+              transform: translate(0%, -50%); }
+
+/*//TARGET OTHERS*/
+@media screen and (max-device-width: 1000px) {
+  #getapc {
+    display: block; }
+
+  head {
+    display: none; }
+
+  main {
+    display: none; }
+
+  canvas {
+    display: none; } }
+@media screen and (max-width: 900px) {
+  #getapc {
+    display: block; }
+
+  head {
+    display: none; }
+
+  main {
+    display: none; }
+
+  canvas {
+    display: none; } }
+
+/*# sourceMappingURL=release_blue.css.map */

@@ -1,0 +1,83 @@
+<html>
+    <head>
+    <title>Pistol Shrimp</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+    <link rel="stylesheet" href="styles/download.css"/>
+
+    <script src="js/libraries/jquery.js"></script>
+
+    <script src="js/login.js"></script>
+
+    <script src="js/rainbow.js"></script>
+
+    <script language="javascript" src="js/terminal.js"></script>
+
+
+    <style media="screen">
+    .numeros{
+       width: 25px;
+       height: 25px;
+       line-height: 25px;
+       outline: 1px solid white;
+       position: absolute;
+       top: 5vh;
+       left: 5vh;
+       z-index: 999;
+       text-align: center;
+       color: white;
+       background-color: none;
+       font-family: sans-serif;
+    }
+
+
+    #n1{
+       margin-left: 35px;
+    }
+
+    #n2{
+       margin-left: 70px;
+    }
+
+    #n3{
+       margin-left: 105px;
+    }
+
+    #n4{
+       margin-left: 140px;
+       background-color: white;
+       color:black;
+    }
+
+    #n5{
+       margin-left: 175px;
+    }
+    </style>
+
+    </head>
+    <body>
+      <div class="numeros" id="n1">0</div>
+      <div class="numeros" id="n2">1</div>
+      <div class="numeros" id="n3">2</div>
+      <div class="numeros" id="n4">3</div>
+      <div class="numeros" id="n5">4</div>
+
+        <div class="main">
+            <form id="form_id" method="post" name="myform">
+                password:</br>
+                <input type="password" name="password" id="password" />
+                </br>
+            </form>
+        </div>
+
+        <div class="yes2">
+           <a href="data/V1.mp3" download class="yes"><br>your password is correct !<br><br>you just won yourself a free track !</a>
+        </div>
+
+        <div class="no2">
+            <a href="data/V2.mp3" download class="no"><br>sorry, your password is wrong :|<br><br>[ at least you got a free track ! ]</a>
+        </div>
+
+    </body>
+</html>
